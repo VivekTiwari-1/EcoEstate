@@ -1,13 +1,33 @@
 import React from 'react'
 import MultiLayerParallax from './MultilayerParallax'
+import { Parallax } from "react-parallax";
+import img1 from "./images/dd.jpg"
+import img2 from "./images/demo.jpg"
+import room1 from "./images/cave room.jpg"
 
 const Park = () => {
     return (
         <>
             <MultiLayerParallax />
-            <div className='h-[100vh]'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quisquam commodi facere, dignissimos quis a magnam corrupti nemo porro autem temporibus. Ut autem porro, recusandae nostrum temporibus quam magni doloribus culpa quasi. Nemo adipisci obcaecati quo ipsum voluptatem! Omnis, libero? Dolorem excepturi quae perspiciatis necessitatibus, nemo aliquam facilis minima laboriosam, cupiditate aperiam saepe magnam obcaecati amet nihil alias cum quibusdam neque voluptate ducimus? Aliquam eveniet unde facere fugiat, quas quos similique perferendis minima non dolorem praesentium, aperiam accusamus maxime voluptatum omnis ipsa esse atque iure necessitatibus reprehenderit repellendus ducimus est quibusdam. Nam, dolorum praesentium. Aliquam, expedita, consectetur quas sequi sint commodi eius quaerat aperiam distinctio dolores esse quod delectus perferendis, unde placeat deleniti officiis sit praesentium recusandae mollitia. Eum ipsam ullam eligendi quam quasi asperiores. Earum ipsam nam praesentium placeat quod, suscipit ullam possimus perspiciatis velit odit quasi sunt vitae nihil modi dolorem similique, asperiores ab fugit iure dolor exercitationem eos in quae. Molestias laboriosam aperiam dolore doloribus impedit architecto culpa, quasi a eligendi amet pariatur aliquam ullam obcaecati asperiores accusantium cum, fugiat magnam cumque nostrum similique ea quo delectus, velit unde. Id voluptatem illum iusto nulla quas, praesentium distinctio aut repellat quo aliquid, doloremque facere enim voluptates aliquam eaque!
+            <div className='h-[100vh] w-full bg-[#151515] text-white content-center'>
+                <div className='flex gap-24 ml-[10vw]'>
+                    <img className='h-[50vh] w-[40vw]' src={room1} alt="" />
+                    <div className='w-[30vw]'>
+                        <h2 className='text-4xl mb-2'>Your Den</h2>
+                        <p className='h-[4px] w-[7vw] bg-orange-800 mb-7'></p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sed suscipit perspiciatis rem quidem explicabo eos amet modi quo sit totam iste error reprehenderit? Mollitia libero illo animi consectetur nam, rem deleniti praesentium! Dolores.</p>
+                    </div>
+                </div>
             </div>
+
+            {/*             
+            <Parallax strength={600} bgImage={img1}>
+                <div className="w-full h-[100vh] bg-bottom bg-cover"></div>
+            </Parallax>
+            <Parallax strength={300} blur={{ min: -5, max: 15 }} bgImage={img2}>
+                <div className="w-full h-[100vh] bg-bottom bg-cover"></div>
+            </Parallax> */}
+
         </>
     )
 }

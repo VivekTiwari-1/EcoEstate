@@ -6,6 +6,7 @@ import img3 from './images/contact.png'
 import Dropdown from './Dropdown'
 import Button from './Button'
 import Navbar from './Navbar/Navbar'
+import { Footer } from './Footer'
 
 const LandingPage = () => {
 
@@ -53,6 +54,8 @@ const LandingPage = () => {
                 </div>
 
             </div>
+
+            <Footer />
         </>
     )
 }
