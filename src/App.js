@@ -5,6 +5,7 @@ import Park from './components/Park';
 import SignIn from './components/Signin';
 import Signup from './components/Signup';
 import { Footer } from './components/Footer';
+import Space from './components/Themes/Space';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/park' element={<Park />} />
+          <Route path='/space' element={<Space />} />
           <Route path='/signin' element={<SignIn />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/footer' element={<Footer />} />

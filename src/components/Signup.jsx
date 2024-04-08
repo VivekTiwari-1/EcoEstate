@@ -5,7 +5,6 @@ const Signup = () => {
     return (
         <>
             <Sign status="Sign Up" />
-            <div>Signup</div>
         </>
     )
 }
