@@ -61,7 +61,7 @@ export default function MultiLayerParallax() {
             <div className="fixed right-0 bottom-[300px] w-[1560px] -z-10">
                 <img className='bg-cover bg-bottom' src={sky} alt="img" />
             </div>
-            <div className="absolute w-full bottom-0 z-[22] h-[300px]" style={{ background: 'linear-gradient(to top, #151515, transparent)' }}></div>
+            <div className="absolute w-full bottom-0 z-[22] h-[200px]" style={{ background: 'linear-gradient(to top, #151515, transparent)' }}></div>
         </div >
     );
 }
