@@ -9,8 +9,8 @@ const Navbar = () => {
 
     const handleScroll = () => {
 
-        if (window.scrollY > 20) {
-            setStyle("bg-white flex justify-between items-center p-10 h-[10vh] w-full shadow-md shadow-grey fixed transition-[0.6s] z-20");
+        if (window.scrollY > 100) {
+            setStyle("bg-[rgba(1,1,1,0.4)] flex justify-between items-center p-10 h-[10vh] w-full shadow-md shadow-grey fixed transition-[0.6s] z-20");
         }
         else {
             setStyle("bg-[rgba(1,1,1,0.4)] text-slate-300 flex justify-between items-center m-10 p-7 h-[10vh] w-[95vw] shadow-md shadow-grey absolute transition-[0.6s] z-20")

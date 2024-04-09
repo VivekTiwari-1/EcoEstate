@@ -1,3 +1,35 @@
 .App {
   text-align: center;
 }
+
+@keyframes infinite-rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-rotate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.rotate-planet2 {
+  animation: infinite-rotate2 30s linear infinite;
+}
+
+.rotate-planet3 {
+  animation: infinite-rotate1 60s linear infinite;
+}
+
+.rotate-planet4 {
+  animation: infinite-rotate1 12s linear infinite;
+}
