@@ -1,9 +1,10 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react"
 import Particles_config from "./Particles_config"
+import Particles_config_white from "./Particles_config_white";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect } from "react";
 
-const Particle = () => {
+const Particle = (props) => {
 
 
     // this should be run only once per application lifetime
@@ -15,7 +16,7 @@ const Particle = () => {
 
     return (
         <div className="absolute">
-            <Particles id="tsparticles" options={Particles_config} />;
+            <Particles id="tsparticles" options={props.colour === "white" ? Particles_config_white : Particles_config} />;
         </div>
     )
 }

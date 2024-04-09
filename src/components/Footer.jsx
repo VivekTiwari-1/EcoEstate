@@ -7,7 +7,7 @@ export function Footer() {
             <hr className='mt-[30px]' />
             <section className=" relative overflow-hidden py-8 mt-[10px]">
 
-                <Particle />
+                <Particle colour="black" />
                 <div className="container relative z-10 mx-auto px-4">
                     <div className="-m-8 flex flex-wrap items-center justify-between">
                         <div className="w-auto p-8">
